@@ -3,9 +3,14 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="Content-Style-Type" content="text/css">
+    <script src="https://momentjs.com/downloads/moment.js"></script>
     <title>Test</title>
   </head>
   <body>
-    <p id="test-date">Sep 10, 2024</p>
+    <p id="test-date"></p>
+    <script>
+      const date = moment().format("MMM D, YYYY");
+      document.getElementById("test-date").innerHTML = date;
+    </script>
   </body>
 </html>
